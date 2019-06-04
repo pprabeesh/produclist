@@ -1,11 +1,15 @@
 import React from "react";
-import { Flex, Box } from "grid-styled";
-
+import { StyledHeader, StyledTitle, StyledFilter } from "./Header.styles";
 const Header = () => (
-  <Flex>
-    <Box width={2 / 8}> Woman's tops </Box>
-    <Box width={6 / 8} />
-  </Flex>
+  <StyledHeader>
+    <StyledTitle> Woman's tops </StyledTitle>
+    <StyledFilter>
+      <select>
+        <option>Filter by size</option>
+        <option>Filter by price</option>
+      </select>
+    </StyledFilter>
+  </StyledHeader>
 );
 
 export default Header;
