@@ -3,15 +3,42 @@ import { Flex, Box } from "grid-styled";
 
 export const StyledContainer = styled(Flex)`
   flex-direction: column;
-  height: 20%;
-  width: 20%;
+  justify-content: space-between;
+  min-height: 320px;
+  height: 33%;
+  min-width: 305px;
+  width: 33%;
+  border: 0.02px solid grey;
 `;
 
 export const StyledImage = styled(Box)`
-  background: no-repeat center/50% ${props => `url(${props.bground})`};
-  height: 100%;
+  background: no-repeat center/70% ${props => `url(${props.bground})`};
+  height: 80%;
+  max-height: 280px;
+  min-width: 280px;
+  margin-top: 5px;
 `;
 
 export const StyledTags = styled(Flex)`
-  margin-left: 1px;
+  justify-content: space-between;
+`;
+
+export const StyledTag = styled(Box)`
+  width: 100px;
+  height: 40px;
+  padding: 3% 2%;
+  margin: 1%;
+  color: white;
+  background-color: ${props => props.bground};
+`;
+
+export const StyledProductName = styled(Box)`
+  margin: 2% 0 0 2%;
+  font-size: 1.5em;
+`;
+
+export const StyledPrice = styled(Box)`
+  font-weight: bold;
+  margin: 2%;
+  font-size: 1.5em;
 `;

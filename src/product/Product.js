@@ -1,5 +1,12 @@
 import React from "react";
-import { StyledContainer, StyledImage, StyledTags } from "./Product.styles";
+import {
+  StyledContainer,
+  StyledImage,
+  StyledTags,
+  StyledTag,
+  StyledProductName,
+  StyledPrice
+} from "./Product.styles";
 
 const Product = product => {
   return (
@@ -9,8 +16,16 @@ const Product = product => {
           process.env.PUBLIC_URL + "/assets/images/" + product.productImage
         }
       />
-      <StyledTags />
-      <StyledTags />
+      <StyledTags>
+        {product.isExclusive && (
+          <StyledTag bground="green"> Exclusive </StyledTag>
+        )}
+        {product.isSale && <StyledTag bground="red"> Sale </StyledTag>}
+      </StyledTags>
+      <StyledTags>
+        <StyledProductName>{product.productName}</StyledProductName>
+        <StyledPrice>{product.price}</StyledPrice>
+      </StyledTags>
     </StyledContainer>
   );
 };
