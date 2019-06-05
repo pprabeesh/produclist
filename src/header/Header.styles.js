@@ -16,4 +16,5 @@ export const StyledTitle = styled(Box)`
 
 export const StyledFilter = styled(Box)`
   margin: 0.5%;
+  flex-direction: column;
 `;

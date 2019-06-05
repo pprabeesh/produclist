@@ -4,6 +4,7 @@ import { Flex, Box } from "grid-styled";
 export const StyledContainer = styled(Flex)`
   flex-direction: column;
   justify-content: space-between;
+  align-content: space-between;
   min-height: 320px;
   height: 33%;
   min-width: 305px;
@@ -12,7 +13,7 @@ export const StyledContainer = styled(Flex)`
 `;
 
 export const StyledImage = styled(Box)`
-  background: no-repeat center/70% ${props => `url(${props.bground})`};
+  background: no-repeat center ${props => `url(${props.bground})`};
   height: 80%;
   max-height: 280px;
   min-width: 280px;
@@ -26,7 +27,7 @@ export const StyledTags = styled(Flex)`
 export const StyledTag = styled(Box)`
   width: 100px;
   height: 40px;
-  padding: 3% 2%;
+  padding: 2%;
   margin: 1%;
   color: white;
   background-color: ${props => props.bground};

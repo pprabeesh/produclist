@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import axios from "axios";
 import Product from "../product/Product";
 import { StyledContainer, Styledflex } from "./ProductList.styles";
 import { DATAURL } from "../Constants";
+import { FilterContext } from "../Context";
 
 export const ProductList = () => {
-  const [products, setProducts] = useState([]);
+  const { state, actions, dispatch } = useContext(FilterContext);
   useEffect(() => {
-    axios.get(DATAURL).then(result => setProducts(result.data));
-  }, []);
+    axios.get(DATAURL).then(result => dispatch(actions.add(result.data)));
+  }, [actions, dispatch]);
+  const products = state ? state.productList : [];
   return (
     <React.Fragment>
       <StyledContainer>
