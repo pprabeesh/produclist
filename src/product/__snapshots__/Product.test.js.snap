@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders correctly: Not expanded 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH sc-htpNat eDtUTK sc-bdVaJa iHZvIS"
+  >
+    <div
+      bground="/assets/images/undefined"
+      class="sc-bdVaJa sc-bxivhb dxynJq"
+    />
+    <div
+      class="sc-bwzfXH sc-ifAKCX cojtVS sc-bdVaJa iHZvIS"
+    />
+    <div
+      class="sc-bwzfXH sc-ifAKCX cojtVS sc-bdVaJa iHZvIS"
+    >
+      <div
+        class="sc-bdVaJa sc-bZQynM eXVguj"
+      />
+      <div
+        class="sc-bdVaJa sc-gzVnrw dCrIVZ"
+      />
+    </div>
+  </div>
+</div>
+`;

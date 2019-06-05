@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList renders correctly: Not expanded 1`] = `
+<div>
+  <div
+    class="sc-htoDjs bxeJIL"
+  >
+    <div
+      class="sc-bwzfXH sc-dnqmqq clqoMf sc-bdVaJa iHZvIS"
+    />
+  </div>
+</div>
+`;

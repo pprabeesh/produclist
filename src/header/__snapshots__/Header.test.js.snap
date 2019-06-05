@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly: Not expanded 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH sc-htpNat bHldxh sc-bdVaJa iHZvIS"
+  >
+    <div
+      class="sc-bdVaJa sc-bxivhb eufOPG"
+    >
+       Woman's tops 
+    </div>
+    <div
+      class="sc-bdVaJa sc-ifAKCX fgROdP"
+    >
+      <select>
+        <option
+          value=""
+        >
+          Select
+        </option>
+        <option
+          value="size"
+        >
+          Filter by size
+        </option>
+        <option
+          value="price"
+        >
+          Filter by price
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
